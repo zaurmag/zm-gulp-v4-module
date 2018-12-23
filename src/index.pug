@@ -1,0 +1,30 @@
+extends components/page
+
+block variables
+    - var title = 'Главная страница сайта'
+    - var pageClass = 'homepage'
+
+block top-position
+    section.top-position.mb-5
+        .module
+            .container
+                .module__title Модуль в позиции TOP
+
+block columns
+    main.content.content__no-cols.col-12
+        article.page.textblock
+            h1.mb-5= title
+
+            .module.my-4
+                .module__title.mb-3 Слайдер
+                include components/owl-carousel/owl-carousel__html
+
+
+    //- Sidebar
+    //include regions/sidebar.pug
+
+block bottom-position
+    section.bottom-position.mt-5
+        .module
+            .container
+                .module__title Модуль в позиции BOTTOM
