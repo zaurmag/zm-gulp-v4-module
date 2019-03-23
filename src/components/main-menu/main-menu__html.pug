@@ -1,6 +1,13 @@
 .collapse.navbar-collapse
     ul.navbar-nav.mr-auto
-        li.nav-item
-            a.nav-link(href="#") Пункт 1
-        li.nav-item
-            a.nav-link(href="#") Пункт 2
+        -
+            var menuData = {
+                "Пункт 1" : "test",
+                "Пункт 2" : "#"
+            }
+        each name, index in menuData
+            li.nav-item
+                if(name == '#')
+                    a.nav-link(href=name)= index
+                else
+                    a.nav-link(href=name + ".html")= index

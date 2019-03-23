@@ -8,5 +8,6 @@ module.exports = [
     './gulp/svg-sprite',
     './gulp/fonts',
     './gulp/watch',
-    './gulp/bsync'
+    './gulp/bsync',
+    './gulp/critical'
 ];

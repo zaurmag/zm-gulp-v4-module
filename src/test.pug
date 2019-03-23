@@ -1,0 +1,25 @@
+extends components/page
+
+block variables
+    - var title = 'Тестовая страница'
+    - var pageClass = 'innerpage'
+
+block top-position
+    section.top-position.mb-5
+        .module
+            .container
+                .module__title Модуль в позиции TOP
+
+block columns
+    main.content.content__no-cols.col-12
+        article.page.textblock
+            h1.mb-5= title
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur culpa distinctio est, illo nesciunt? Adipisci aliquid aut, autem dolore fugit modi numquam quasi veritatis vitae voluptate! Aut vel, voluptatem!
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur culpa distinctio est, illo nesciunt? Adipisci aliquid aut, autem dolore fugit modi numquam quasi veritatis vitae voluptate! Aut vel, voluptatem!
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur culpa distinctio est, illo nesciunt? Adipisci aliquid aut, autem dolore fugit modi numquam quasi veritatis vitae voluptate! Aut vel, voluptatem!
+
+block bottom-position
+    section.bottom-position.mt-5
+        .module
+            .container
+                .module__title Модуль в позиции BOTTOM
