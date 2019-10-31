@@ -9,7 +9,7 @@ module.exports = function () {
             .pipe($.plugins.pxtorem())
             .pipe($.plugins.csso())
             .pipe($.plugins.autoprefixer({
-                browsers: ['last 2 versions'],
+                overrideBrowserslist: ['last 2 versions'],
                 cascade: false
             }))
             .pipe($.plugins.rename({ suffix: '.devmin' }))
@@ -28,7 +28,7 @@ module.exports = function () {
             .pipe($.plugins.pxtorem())
             .pipe($.plugins.csso())
             .pipe($.plugins.autoprefixer({
-                browsers: ['last 2 versions'],
+                overrideBrowserslist: ['last 2 versions'],
                 cascade: false
             }))
             .pipe($.plugins.rename({ suffix: '.min' }))

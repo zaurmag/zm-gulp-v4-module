@@ -22,18 +22,18 @@ $.gulp.task('build', $.gulp.series(
     $.gulp.parallel(
         'pug:build',
         'style:build',
-        'styleDev:build',
         'js:build',
         'img:build',
         'spriteImg:build'
-        // 'fonts:build'
+        //'fonts:build'
     ))
 );
 $.gulp.task('default', $.gulp.series(
     'build',
     $.gulp.parallel(
-    'critical:build',
+    //'critical:build',
     'watch',
-    'bsync'
+    'bsync',
+    'favicons:build'
 
 )));

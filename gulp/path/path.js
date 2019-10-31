@@ -5,8 +5,10 @@ module.exports = {
             html: 'dist/',
             style: 'dist/css',
             img: 'dist/images',
+            imgFavicons: 'dist/images/favicons',
             js: 'dist/js',
             fonts: 'dist/fonts',
+            zip: 'zip',
             //Replace in cms template
             // style: cmsPath + '/css',
             // img: cmsPath + '/images',
@@ -15,13 +17,14 @@ module.exports = {
         },
         src: { // Source files
             pug: 'src/*.pug',
-            style: 'src/components/styles.sass',
+            style: 'src/base/styles.sass',
             img: 'src/images/**/*.+(png|jpg|jpeg|gif)',
             imgComp: 'src/components/**/*.+(png|jpg|jpeg|gif)',
             pngIcons: 'src/images/icons/png/*.png',
             svgIcons: 'src/images/icons/svg/*.svg',
             js: 'src/**/*.js',
-            fonts: 'src/fonts/*'
+            fonts: 'src/fonts/*',
+            favicon: 'src/images/favicon.png'
         },
         watch: { // Watch files
             pug: 'src/**/*.pug',

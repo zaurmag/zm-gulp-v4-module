@@ -9,5 +9,7 @@ module.exports = [
     './gulp/fonts',
     './gulp/watch',
     './gulp/bsync',
-    './gulp/critical'
+    './gulp/critical',
+    './gulp/favicons',
+    './gulp/zip'
 ];
