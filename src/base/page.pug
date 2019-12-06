@@ -17,7 +17,7 @@ html(lang="en")
         <![endif]-->
 
     body(class=pageClass)
-        #page.main-wrap
+        .wrapper
 
             .main-wrap__content
                 //- Include header
@@ -35,7 +35,7 @@ html(lang="en")
                                     span.divider /
                                 li.breadcrumbs--active #{title}
 
-                    .row
+                    .row.content
                         block columns
 
                 block bottom-position
@@ -44,24 +44,17 @@ html(lang="en")
             include ../components/footer/footer
 
         //- Callback form
-        #callback.zoom-anim-dialog.mfp-hide.white-block.callback-block
-            form#callbackForm.form__form.callback-form(action='#')
-                fieldset.form__fields.form__hide-success
-                    legend.form__title Мы вам перезвоним!
-                    .form-group
-                        input#name.inputbox(name='name', type='text', placeholder='Ваше имя*', required)
-                    .form-group
-                        input#phone.inputbox.phoneMask(name='phone', type='text', placeholder='Ваш телефон*', required)
-                    input(type='hidden', name='go', value='5')
-                    input(type='hidden', name='submitCallback', value='callback')
-                    .btn-block
-                        button.btn-submit.btn.btn-primary.btn-block(type='submit') Отправить
+        #callback.zoom-anim-dialog.mfp-hide.white-block
+            //- Include callback
+            include ../components/callback/callback
 
         .d-none
             include ../../dist/images/sprite.svg
 
-        a.go_top_link(href='#', style='display:none;')
+        a.go-top(href='#', style='display:none;')
             +icon('arrow-up')
+
         script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
         script(src='./js/scripts.js')
+
         block script
