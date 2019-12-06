@@ -10,7 +10,7 @@
   "author": "Zaur Magomedov",
   "license": "ISC",
   "devDependencies": {
-    "bootstrap": "latest",
+    "gulp-favicons": "latest",
     "browser-sync": "latest",
     "critical": "latest",
     "del": "latest",
@@ -34,10 +34,11 @@
     "gulp-uglify": "latest",
     "gulp-watch": "latest",
     "gulp.spritesmith": "latest",
-    "gulp-zip": "latest"
+    "gulp-zip": "latest",
+    "gulp-data": "latest"
   },
   "dependencies": {
-    "gulp-favicons": "latest",
+    "bootstrap": "latest",
     "magnific-popup": "latest",
     "owl.carousel": "latest"
   }
