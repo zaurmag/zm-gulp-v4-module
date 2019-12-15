@@ -27,6 +27,7 @@ module.exports = {
             favicon: 'src/images/favicon.png'
         },
         watch: { // Watch files
+            json: 'src/base/data/*.json',
             pug: 'src/**/*.pug',
             style: 'src/**/*'
         },
