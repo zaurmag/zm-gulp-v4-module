@@ -7,7 +7,7 @@ module.exports = function (done) {
             .pipe($.plugins.favicons({
                 html: 'favicons.html',
                 pipeHTML: true,
-                path: 'images/favicons/',
+                path: './images/favicons/',
                 replace: true,
                 icons: {
                     appleIcon: true,

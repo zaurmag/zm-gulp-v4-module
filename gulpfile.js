@@ -24,14 +24,14 @@ $.gulp.task('build', $.gulp.series(
         'style:build',
         'js:build',
         'img:build',
-        'spriteImg:build'
+        //'spriteImg:build'
         //'fonts:build'
     ))
 );
 $.gulp.task('default', $.gulp.series(
     'build',
     $.gulp.parallel(
-    //'critical:build',
+    'critical:build',
     'watch',
     'bsync',
     'favicons:build'
