@@ -1,4 +1,4 @@
-extends ./base/page
+extends ./base/base
 
 block variables
     - var title = 'Главная страница сайта'
@@ -13,7 +13,12 @@ block top-position
 block columns
     main.content__no-cols.col-12
         article.page.textblock
-            h1.text-primary.mb-5= title
+            //h1.text-primary.mb-5 !{title}
+
+            p
+                != 'Строка текста с тегом <strong>выделения</strong>.'
+
+
 
 block bottom-position
     section.bottom-position.mt-5
