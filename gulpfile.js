@@ -23,7 +23,7 @@ $.gulp.task('build', $.gulp.series(
         'pug:build',
         'style:build',
         'js:build',
-        'img:build',
+        'img:build'
         //'spriteImg:build'
         //'fonts:build'
     ))
@@ -34,6 +34,7 @@ $.gulp.task('default', $.gulp.series(
     'critical:build',
     'watch',
     'bsync',
-    'favicons:build'
+    'favicons',
+    'favicons:logo'
 
 )));

@@ -13,7 +13,8 @@ module.exports = {
             // style: cmsPath + '/css',
             // img: cmsPath + '/images',
             // js: cmsPath + '/js',
-            // fonts: cmsPath + '/fonts'
+            // fonts: cmsPath + '/fonts',
+            //imgFavicons: cmsPath + '/images/favicons'
         },
         src: { // Source files
             pug: 'src/*.pug',
@@ -24,7 +25,8 @@ module.exports = {
             svgIcons: 'src/images/icons/svg/*.svg',
             js: 'src/**/*.js',
             fonts: 'src/fonts/*',
-            favicon: 'src/images/favicon.png'
+            favicon: 'src/images/favicon-sm.png',
+            faviconLogo: 'src/images/favicon-lg.png'
         },
         watch: { // Watch files
             json: 'src/base/data/*.json',
