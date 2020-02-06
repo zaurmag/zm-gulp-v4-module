@@ -21,7 +21,8 @@ $.gulp.task('build', $.gulp.series(
     'spriteSvg:build',
     $.gulp.parallel(
         'pug:build',
-        'style:build',
+        //'style:build',
+        'styleDev:build',
         'js:build',
         'img:build'
         //'spriteImg:build'
@@ -31,7 +32,7 @@ $.gulp.task('build', $.gulp.series(
 $.gulp.task('default', $.gulp.series(
     'build',
     $.gulp.parallel(
-    'critical:build',
+    //'critical:build',
     'watch',
     'bsync',
     'favicons',
