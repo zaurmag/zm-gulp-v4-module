@@ -1,8 +1,8 @@
 var path = require('./path/path.js');
 
 module.exports = function (done) {
-    $.gulp.task('favicons', function() {
-        return $.gulp.src(path.path.src.favicon)
+    $.gulp.task('favicons:lg', function() {
+        return $.gulp.src(path.path.src.favicon_lg)
             .pipe($.plugins.plumber())
             .pipe($.plugins.favicons({
                 html: 'favicons.html',
@@ -25,8 +25,8 @@ module.exports = function (done) {
         done();
     });
 
-    $.gulp.task('favicons:logo', function() {
-        return $.gulp.src(path.path.src.faviconLogo)
+    $.gulp.task('favicons:sm', function() {
+        return $.gulp.src(path.path.src.favicon_sm)
             .pipe($.plugins.plumber())
             .pipe($.plugins.favicons({
                 html: 'favicons-logo.html',

@@ -35,7 +35,6 @@ $.gulp.task('default', $.gulp.series(
     //'critical:build',
     'watch',
     'bsync',
-    'favicons',
-    'favicons:logo'
-
+    'favicons:lg',
+    'favicons:sm'
 )));

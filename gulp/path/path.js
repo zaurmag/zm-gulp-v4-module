@@ -1,4 +1,4 @@
-var cmsPath = 'W:/domains/farmer-online/templates/template_zm_it/';
+var cmsPath = 'W:/domains/localhost/';
 module.exports = {
     path: {
         build: { // Build files
@@ -10,7 +10,7 @@ module.exports = {
             fonts: 'dist/fonts',
             zip: 'zip',
             //Replace in cms template
-            // style: cmsPath + '/css',
+            cms_style: cmsPath + '/css',
             // img: cmsPath + '/images',
             // js: cmsPath + '/js',
             // fonts: cmsPath + '/fonts',
@@ -25,8 +25,8 @@ module.exports = {
             svgIcons: 'src/images/icons/svg/*.svg',
             js: 'src/**/*.js',
             fonts: 'src/fonts/*',
-            favicon: 'src/images/favicon-sm.png',
-            faviconLogo: 'src/images/favicon-lg.png'
+            favicon_lg: 'src/images/favicon-sm.png',
+            favicon_sm: 'src/images/favicon-lg.png'
         },
         watch: { // Watch files
             json: 'src/base/data/*.json',
