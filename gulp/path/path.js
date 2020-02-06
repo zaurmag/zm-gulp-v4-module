@@ -25,8 +25,8 @@ module.exports = {
             svgIcons: 'src/images/icons/svg/*.svg',
             js: 'src/**/*.js',
             fonts: 'src/fonts/*',
-            favicon_lg: 'src/images/favicon-sm.png',
-            favicon_sm: 'src/images/favicon-lg.png'
+            favicon_lg: 'src/images/favicon-lg.png',
+            favicon_sm: 'src/images/favicon-sm.png'
         },
         watch: { // Watch files
             json: 'src/base/data/*.json',

@@ -46,7 +46,7 @@ html(lang="ru")
     body(class=pageClass)
         .wrapper
 
-            .main-wrap__content
+            .wrapper__content
                 //- Include header
                 include ../components/header/header
 
@@ -58,7 +58,7 @@ html(lang="ru")
                         nav.breadcrumbs
                             ul.breadcrumbs__list
                                 li
-                                    a(href="#") Главная
+                                    a(href="/") Главная
                                     span.breadcrumbs__divider /
 
                                 li.is--active #{title}

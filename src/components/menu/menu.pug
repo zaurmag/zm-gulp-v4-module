@@ -1,11 +1,11 @@
-nav.main-menu.mb-6
+nav.menu.mb-6
     .container
         //- Hamburger
         include ../hamburger/hamburger
 
         //- Menu list
-        ul.main-menu__nav
-            each item in navData
-                li
-                    a(href= item.link)
+        ul.menu__list.nav
+            each item in menuData
+                li.nav-item
+                    a.nav-link(href= item.link)
                         = item.text
