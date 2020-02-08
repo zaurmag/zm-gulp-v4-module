@@ -8,7 +8,7 @@ module.exports = function (done) {
                 base: 'dist/',
                 inline: true,
                 ignore: ['@font-face','backdrop-filter','-webkit-backdrop-filter',/url\(/],
-                css: [path.path.build.style + '/styles.min.css'],
+                css: [path.path.build.style + '/main.min.css'],
                 dimensions: [{
                     height: 667,
                     width: 375

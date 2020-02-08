@@ -18,7 +18,7 @@ module.exports = {
         },
         src: { // Source files
             pug: 'src/*.pug',
-            style: 'src/base/styles.sass',
+            style: 'src/base/main.sass',
             img: 'src/images/**/*.+(png|jpg|jpeg|gif)',
             imgComp: 'src/components/**/*.+(png|jpg|jpeg|gif)',
             pngIcons: 'src/images/icons/png/*.png',
