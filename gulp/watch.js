@@ -17,5 +17,13 @@ module.exports = function () {
         $.gulp.watch(path.path.src.imgComp, {usePolling: true}, $.gulp.parallel('img:build'));
         $.gulp.watch(path.path.src.pngIcons, $.gulp.parallel('spriteImg:build'));
         $.gulp.watch(path.path.src.svgIcons, $.gulp.parallel('spriteSvg:build'));
+
+        // With Ftp
+        // $.gulp.watch(path.path.watch.style, {usePolling: true}, $.gulp.series('styleDev:build', 'ftp:build'));
+        // $.gulp.watch(path.path.src.js, {usePolling: true}, $.gulp.parallel('js:build', 'ftp:build'));
+        // $.gulp.watch(path.path.src.img, {usePolling: true}, $.gulp.parallel('img:build', 'ftp:build'));
+        // $.gulp.watch(path.path.src.imgComp, {usePolling: true}, $.gulp.parallel('img:build', 'ftp:build'));
+        // $.gulp.watch(path.path.src.pngIcons, $.gulp.parallel('spriteImg:build', 'ftp:build'));
+        // $.gulp.watch(path.path.src.svgIcons, $.gulp.parallel('spriteSvg:build', 'ftp:build'));
     });
 };
