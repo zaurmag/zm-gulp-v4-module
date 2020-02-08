@@ -1,4 +1,3 @@
-var cmsPath = 'W:/domains/localhost/';
 module.exports = {
     path: {
         build: { // Build files
@@ -8,13 +7,7 @@ module.exports = {
             imgFavicons: 'dist/images/favicons',
             js: 'dist/js',
             fonts: 'dist/fonts',
-            zip: 'zip',
-            //Replace in cms template
-            cms_style: cmsPath + '/css',
-            // img: cmsPath + '/images',
-            // js: cmsPath + '/js',
-            // fonts: cmsPath + '/fonts',
-            //imgFavicons: cmsPath + '/images/favicons'
+            zip: 'zip'
         },
         src: { // Source files
             pug: 'src/*.pug',
