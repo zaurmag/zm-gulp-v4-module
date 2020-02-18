@@ -5,10 +5,16 @@ module.exports = function (done) {
         return $.gulp.src(path.path.src.favicon_lg)
             .pipe($.plugins.plumber())
             .pipe($.plugins.favicons({
+                appName: "My App",
+                appShortName: "App",
+                appDescription: "This is my application",
                 html: 'favicons.html',
                 pipeHTML: true,
+                url: "http://localhost/",
                 path: './images/favicons/',
                 replace: true,
+                version: 3,
+                lang: "ru-RU",
                 icons: {
                     appleIcon: true,
                     favicons: false,
